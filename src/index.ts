@@ -3,8 +3,6 @@ import * as md5 from 'js-md5';
 // Function import node fs module
 import * as fs from 'node:fs';
 
-const url: string = 'https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml';
-
 // Compose Function
 function compose<A>(...fns: Function[]): Function {
  return (x : A) => fns.reduceRight((v, f) => f(v), x);
@@ -80,6 +78,10 @@ type Rss = {
  }
 }
 
+type Links = {
+ links: string[];
+}
+
 const ops: Function[] = [
   json,
   items
@@ -89,10 +91,19 @@ ops.reverse();
 // Compose the functions
 const op = compose(...ops);
 
-// Call the op function
-const result = op(await get(url));
-result.forEach((item: Item) => {
+// Load links from links.json
+const links: Links = JSON.parse(fs.readFileSync('links.json', 'utf8'));
+// For each link in links
+for (const link of links.links) {
+ // Get the response
+ const response = await get(link);
+ // Parse the response
+ const data = op(response);
+ // For each item in the response
+ data.forEach((item: Item) => {
+  // Write the item to file
   const text : string = JSON.stringify(item, null, 2);
   write(text);
   console.log(text);
-});
+ });
+};
