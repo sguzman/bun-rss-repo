@@ -59,6 +59,7 @@
   "https://rss.nytimes.com/services/xml/rss/nyt/MostViewed.xml",
   "https://rss.nytimes.com/services/xml/rss/nyt/MostShared.xml",
   "https://rss.nytimes.com/services/xml/rss/nyt/sunday-review.xml",
-  "https://tradingeconomics.com/rss/news.aspx"
+  "https://tradingeconomics.com/rss/news.aspx",
+  "https://www.sec.gov/cgi-bin/browse-edgar?action=getcurrent"
  ]
 }
