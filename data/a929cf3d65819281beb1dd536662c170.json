@@ -1,0 +1,28 @@
+{
+  "title": "C.D.C. Links Deadly Listeria Outbreak to Deli Meats and Cheeses",
+  "link": "https://www.nytimes.com/2022/11/09/us/listeria-outbreak-us.html",
+  "guid": "https://www.nytimes.com/2022/11/09/us/listeria-outbreak-us.html",
+  "atom:link": "",
+  "description": "Sixteen people in six states have been infected with the listeria strain, resulting in one death and 13 hospitalizations, the agency said.",
+  "dc:creator": "Eduardo Medina",
+  "pubDate": "Wed, 09 Nov 2022 23:55:26 +0000",
+  "category": [
+    "Food Contamination and Poisoning",
+    "Listeria Monocytogenes",
+    "Cheese",
+    "Centers for Disease Control and Prevention",
+    "Meat",
+    "Brooklyn (NYC)",
+    "Staten Island (NYC)",
+    "Maryland",
+    "New Jersey",
+    "California",
+    "Illinois",
+    "Massachusetts",
+    "NetCost Market (Royal Seafood Market Inc)"
+  ],
+  "media:content": {
+    "media:credit": "Elizabeth White/CDC, via Associated Press",
+    "media:description": "An electron microscope image of the Listeria monocytogenes bacterium, responsible for the food-borne illness listeriosis."
+  }
+}
